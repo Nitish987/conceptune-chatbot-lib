@@ -1,9 +1,31 @@
+#chatbotActiveBtn {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chatbotActiveBtn img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
 .chatbot {
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 300px;
-    height: 450px;
+    width: 350px;
+    height: 550px;
     box-shadow: 0px 0px 10px grey;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,7 +38,7 @@
 
 .chatbot .profile {
     height: 50px;
-    width: 300px;
+    width: 350px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
@@ -26,7 +48,7 @@
     background-color: #2966e2;
 }
 
-.chatbot .profile img {
+.chatbot .profile > img {
     width: 35px;
     height: 35px;
     margin-left: 10px;
@@ -35,6 +57,13 @@
 
 .chatbot .profile h4 {
     color: white;
+    flex-grow: 1;
+}
+
+.chatbot .profile #chatbotCloseBtn {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
 }
 
 .chatbot .chats {
@@ -76,7 +105,7 @@
 
 .chatbot .message-box {
     height: 50px;
-    width: 300px;
+    width: 350px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: fixed;

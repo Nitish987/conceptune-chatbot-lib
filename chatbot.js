@@ -1,6 +1,19 @@
+const chatbotActiveBtn = document.getElementById('chatbotActiveBtn');
+const chatbotCloseBtn = document.getElementById('chatbotCloseBtn');
+const conceptuneChatbot = document.getElementById('conceptuneChatbot');
 const message = document.getElementById('message-content');
 const sendBtn = document.getElementById('send-message');
 const messageHolder = document.getElementById('chatbox-holder');
+
+chatbotActiveBtn.addEventListener('click', event => {
+    chatbotActiveBtn.style.display = 'none';
+    conceptuneChatbot.style.display = 'block';
+});
+
+chatbotCloseBtn.addEventListener('click', event => {
+    chatbotActiveBtn.style.display = 'flex';
+    conceptuneChatbot.style.display = 'none';
+});
 
 function buildMessage(type, message) {
     const div = document.createElement('div');
