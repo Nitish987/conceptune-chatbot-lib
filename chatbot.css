@@ -103,6 +103,30 @@
     box-shadow: 0px 0px 3px grey;
 }
 
+.chatbot .chats .emform {
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #cdcdcd;
+    box-shadow: 0px 0px 3px grey;
+}
+
+.chatbot .chats .emform > input,
+.chatbot .chats .emform-submit {
+    border-radius: 5px;
+    height: 25px;
+    padding: 5px;
+    border: none;
+}
+
+.chatbot .chats .emform > h5 {
+    margin: 5px;
+}
+
 .chatbot .message-box {
     height: 50px;
     width: 350px;
